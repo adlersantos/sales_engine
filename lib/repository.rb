@@ -18,10 +18,12 @@ class Repository
   end
 
   def find_all_by_attr(attr_name, value)
+    attr_name = ('@' + attr_name.to_s).to_sym
     @all.select { |item| item.instance_variable_get(attr_name) == value }
   end
 
   def find_by_attr(attr_name, value)
+    attr_name = ('@' + attr_name.to_s).to_sym
     @all.detect { |item| item.instance_variable_get(attr_name) == value }
   end
 

@@ -1,0 +1,26 @@
+customer
+  first_name, last_name
+  has_many invoices
+
+merchant
+  name
+  has_many items
+  has_many invoices
+
+invoice
+  status (shipped)
+  belongs_to customer
+  belongs_to merchant
+
+invoice_item
+  quantity, unit_price
+  belongs_to item
+  belongs_to invoice
+
+item
+  name, description, unit_price
+  belongs_to merchant
+
+transaction
+  credit_card_number, credit_card_expiration_date, result (success/failed)
+  belongs_to invoice

@@ -3,6 +3,13 @@ GEM
   specs:
     cane (2.6.0)
       parallel
+    columnize (0.3.6)
+    debugger (1.6.1)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.2.0)
+      debugger-ruby_core_source (~> 1.2.3)
+    debugger-linecache (1.2.0)
+    debugger-ruby_core_source (1.2.3)
     minitest (5.0.8)
     parallel (0.8.4)
     rake (10.1.0)
@@ -22,6 +29,7 @@ PLATFORMS
 
 DEPENDENCIES
   cane
+  debugger
   minitest
   rake
   reek

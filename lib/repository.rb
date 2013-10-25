@@ -53,3 +53,9 @@ class ItemRepository < Repository
     super(filename, klass)
   end
 end
+
+class Invoice < Repository
+  def initialize(filename="invoices.csv")
+    super(filename, klass)
+  end
+end

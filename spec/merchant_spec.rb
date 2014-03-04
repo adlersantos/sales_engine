@@ -1,7 +1,4 @@
-require 'repository'
-require 'merchant'
-require 'item'
-require 'debugger'
+require 'spec_helper'
 
 describe Merchant do
   let(:merchant_repo) { MerchantRepository.new }
@@ -11,7 +8,6 @@ describe Merchant do
 
   describe "#items" do
     it "returns an array of items belonging to the merchant" do
-      fake_merchant.set_items(item_repo)
       expect(fake_merchant.items).to include(item_repo.find_by_id(1181))
     end
 

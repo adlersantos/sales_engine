@@ -1,5 +1,8 @@
 require 'csv'
-require_relative 'merchant'
+require 'sales_engine/repository'
+require 'sales_engine/merchant'
+require 'sales_engine/customer'
+require 'sales_engine/item'
 
 class SalesEngine
   repositories = [:merchant_repository,

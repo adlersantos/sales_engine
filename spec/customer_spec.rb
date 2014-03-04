@@ -1,4 +1,4 @@
-require 'customer'
+require 'spec_helper'
 
 describe Customer do
   describe "#initialize" do

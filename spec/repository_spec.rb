@@ -1,6 +1,4 @@
-require 'repository'
-require 'merchant'
-require 'item'
+require 'spec_helper'
 
 describe MerchantRepository do
   let(:merchant_repo) { MerchantRepository.new }

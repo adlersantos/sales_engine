@@ -1,4 +1,4 @@
-JumpstartLab's Sales Engine
+Sales Engine
 ============
 
 A data reporting tool that manipulates and reports on merchant transactional data.
